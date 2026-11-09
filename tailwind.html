@@ -7,6 +7,109 @@
     <title>Laboration 1 | Tailwind</title>
   </head>
   <body>
-    <h1 class="text-3x1 font-bold underline">Hello world!</h1>
+    <header>
+      <h1 class="text-center font-bold text-3xl my-10 bg-gray-600 text-white py-10">Laboration 1 - Fullstack-utveckling</h1>
+      <nav>
+        <ul class="flex w-1/2 mx-auto justify-between bg-gray-300 p-4 rounded">
+          <li><a href="/" class="font-bold">Startsida</a></li>
+          <li><a href="/tailwind" class="font-bold">Tailwind</a></li>
+          <li><a class="font-bold">Bootstrap</a></li>
+          <li><a href="/publication" class="font-bold">Publicering</a></li>
+        </ul>
+      </nav>
+    <h2 class="text-center font-bold text-2xl m-5">Tailwind</h2>
+    </header>
+    <h3 class="font-bold text-xl w-1/2 mx-auto m-2">Tabell - Kurser</h3>
+    <table class="border-collapse border mx-auto w-1/2 mb-10">
+      <thead>
+        <tr>
+          <th class="border p-2">Kurskod</th>
+          <th class="border p-2">Kursnamn</th>
+          <th class="border p-2">Progression</th>
+          <th class="border p-2">Kursplan</th>
+          <th class="border p-2">Avklarad</th>
+        </tr>
+        <tbody>
+          <tr>
+            <td class="border p-2">DT071G</td>
+            <td class="border p-2">Programmering i C#.NET</td>
+            <td class="border p-2">A</td>
+            <td class="border p-2">Länk</td>
+            <td class="border p-2">Ja</td>
+          </tr>
+          <tr>
+            <td class="border p-2">IK060G</td>
+            <td class="border p-2">Projektledning</td>
+            <td class="border p-2">A</td>
+            <td class="border p-2">Länk</td>
+            <td class="border p-2">Ja</td>
+          </tr>
+          <tr>
+            <td class="border p-2">DT193G</td>
+            <td class="border p-2">Fullstack-utveckling med ramverk</td>
+            <td class="border p-2">B</td>
+            <td class="border p-2">Länk</td>
+            <td class="border p-2">Nej</td>
+          </tr>
+          <tr>
+            <td class="border p-2">DT209G</td>
+            <td class="border p-2">Webbutveckling för WordPress</td>
+            <td class="border p-2">B</td>
+            <td class="border p-2">Länk</td>
+            <td class="border p-2">Nej</td>
+          </tr>
+          <tr>
+            <td class="border p-2">DT208G</td>
+            <td class="border p-2">Programmering i TypeScript</td>
+            <td class="border p-2">B</td>
+            <td class="border p-2">Länk</td>
+            <td class="border p-2">Ja</td>
+          </tr>
+        </tbody>
+      </thead>
+    </table>
+    <h3 class="font-bold w-1/2 mx-auto text-xl m-2">Formulär - Lägg till kurs</h3>
+    <form class="w-1/2 mx-auto p-4 border rounded mb-10">
+      <div class="flex w-3/5 mx-auto justify-between m-4">
+      <label for="coursecode">Kurskod:</label>
+      <select id="coursecode" name="coursecode" class="border">
+        <option value="DT071G">DT071G</option> <!--C#-->
+        <option value="IK060G">IK060G</option> <!--Projektledning-->
+        <option value="DT193G">DT193G</option> <!--Fullstack-->
+        <option value="DT209G">DT209G</option> <!--Wordpress-->
+        <option value="DT208G">DT208G</option> <!--TypeScript-->
+      </select>
+      </div>
+      <div class="flex w-3/5 mx-auto justify-between m-4">
+      <label for="coursename">Kursnamn:</label>
+     <input type="text" id="coursename" name="coursename" class="border">
+     </div>
+     <div class="flex w-3/5 mx-auto justify-between">
+     <label for="progression">Progression:</label>
+     <select id="progression" name="progression" class="border">
+      <option value="A">A</option>
+      <option value="B">B</option>
+     </select>
+     </div>
+     <div class="flex w-3/5 mx-auto justify-between m-4">
+     <label for="courseplan">Kursplan:</label>
+     <textarea id="courseplan" name="courseplan" class="border"></textarea>
+     </div>
+     <div class="flex w-3/5 mx-auto justify-between m-4">
+     <label for="status">Avklarad:</label>
+     <input type="checkbox" id="status" name="status" value="Ja">
+     </div>
+     <button type="submit" class="bg-blue-700 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded mx-auto w-25 flex m-10">Lägg till</button>
+    </form>
+    <h3 class="font-bold text-xl w-1/2 mx-auto m-2">Utvärdering</h3>
+    <div class="border w-1/2 mx-auto rounded mb-10 leading-8">
+    <p class="w-1/2 mx-auto p-2">Fördelar: Snabbt att komma igång, tydliga instruktioner om hur man installerar och importerar Tailwind i Vite.</p>
+    <p class="w-1/2 mx-auto p-2">Nackdelar: Tar lång tid att komma in i tänket, och utan ett komponent-baserat ramverk blir det mycket upprepad kod.</p>
+    </div>
+    <footer class="text-center bg-gray-600 text-white py-10 leading-10">
+      <p>Fullstack-utveckling</p>
+      <p>DT193G</p>
+      <p>JOBA1602</p>
+    </footer>
   </body>
 </html>
