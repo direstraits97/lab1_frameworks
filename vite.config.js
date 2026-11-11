@@ -6,9 +6,9 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "index.html"),
-        tailwind: resolve(__dirname, "tailwind.html"),
-        publication: resolve(__dirname, "publication.html"),
+        main: resolve(import.meta.dirname, "index.html"),
+        tailwind: resolve(import.meta.dirname, "tailwind.html"),
+        publication: resolve(import.meta.dirname, "publication.html"),
       },
     },
   },
