@@ -7,17 +7,18 @@
     <title>Laboration 1 | Tailwind</title>
   </head>
   <body>
-    <header>
-      <h1 class="text-center font-bold text-3xl my-10 bg-gray-600 text-white py-10">Laboration 1 - Fullstack-utveckling</h1>
-      <nav>
+    <header class="bg-gray-600">
+      <h1 class="text-center font-bold text-3xl text-white py-18">Laboration 1 - Fullstack-utveckling</h1>
+      <nav class="pb-10">
         <ul class="flex w-1/2 mx-auto justify-between bg-gray-300 p-4 rounded">
           <li><a href="/" class="font-bold">Startsida</a></li>
-          <li><a href="/tailwind" class="font-bold">Tailwind</a></li>
-          <li><a class="font-bold">Bootstrap</a></li>
+          <li><a href="/tailwind" class="font-bold underline">Tailwind</a></li>
+          <li><a href="/bootstrap" class="font-bold">Bootstrap</a></li>
           <li><a href="/publication" class="font-bold">Publicering</a></li>
         </ul>
       </nav>
     </header>
+    <main>
     <h2 class="text-center font-bold text-2xl m-5">Tailwind</h2>
     <h3 class="font-bold text-xl w-1/2 mx-auto m-2">Tabell - Kurser</h3>
     <table class="border-collapse border mx-auto w-1/2 mb-10">
@@ -99,13 +100,14 @@
      <label for="status">Avklarad:</label>
      <input type="checkbox" id="status" name="status" value="Ja">
      </div>
-     <button type="submit" class="bg-blue-700 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded mx-auto w-25 flex m-10">Lägg till</button>
+     <button type="submit" class="bg-blue-700 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded mx-auto w-25 flex m-10 cursor-pointer">Lägg till</button>
     </form>
     <h3 class="font-bold text-xl w-1/2 mx-auto m-2">Utvärdering</h3>
     <div class="border w-1/2 mx-auto rounded mb-10 leading-8">
     <p class="w-1/2 mx-auto p-2">Fördelar: Snabbt att komma igång, tydliga instruktioner om hur man installerar och importerar Tailwind i Vite.</p>
     <p class="w-1/2 mx-auto p-2">Nackdelar: Tar lång tid att komma in i tänket, mycket och rörig kod i html-filerna.</p>
     </div>
+    </main>
     <footer class="text-center bg-gray-600 text-white py-10 leading-10">
       <p>Fullstack-utveckling</p>
       <p>DT193G</p>
