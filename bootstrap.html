@@ -6,19 +6,19 @@
     <title>Laboration 1 | Bootstrap</title>
   </head>
   <body>
-    <header class="bg-secondary p-5">
-      <h1 class="text-light text-center mb-5">
+    <header class="bg-secondary p-md-5">
+      <h1 class="text-light text-center py-5">
         Laboration 1 - Fullstack-utveckling
       </h1>
-      <nav class="bg-light p-3 rounded w-50 mx-auto">
-        <ul class="nav nav-justified">
-          <li class="nav-item">
+      <nav class="bg-light">
+        <ul class="nav nav-justified d-flex flex-column flex-md-row">
+          <li class="nav-item border-bottom py-2 py-md-4">
             <a href="/" class="nav-link text-black">Startsida</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item border-bottom py-2 py-md-4">
             <a href="/tailwind" class="nav-link text-black">Tailwind</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item border-bottom py-2 py-md-4">
             <a
               href="/bootstrap"
               class="nav-link text-black text-decoration-underline"
@@ -26,149 +26,159 @@
               Bootstrap
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item border-bottom py-2 py-md-4">
             <a href="/publication" class="nav-link text-black">Publicering</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <h2 class="text-center mt-4">Bootstrap</h2>
-      <h3 class="w-50 mx-auto">Tabell - Kurser</h3>
-      <table class="table table-bordered border-secondary w-50 mx-auto mt-2">
-        <thead>
-          <tr>
-            <th>Kurskod</th>
-            <th>Kursnamn</th>
-            <th>Progression</th>
-            <th>Kursplan</th>
-            <th>Avklarad</th>
-          </tr>
-        </thead>
-        <tbody>
-          <td>DT071G</td>
-          <td>Programmering i C#.NET</td>
-          <td>A</td>
-          <td>Länk</td>
-          <td>Ja</td>
-          <tr>
-            <td>IK060G</td>
-            <td>Projektledning</td>
+      <h2 class="text-center my-4">Bootstrap</h2>
+      <h3 class="container">Tabell - Kurser</h3>
+      <div class="overflow-x-auto container">
+        <table class="table table-bordered border-secondary">
+          <thead>
+            <tr>
+              <th>Kurskod</th>
+              <th>Kursnamn</th>
+              <th>Progression</th>
+              <th>Kursplan</th>
+              <th>Avklarad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <td>DT071G</td>
+            <td>Programmering i C#.NET</td>
             <td>A</td>
             <td>Länk</td>
             <td>Ja</td>
-          </tr>
-          <tr>
-            <td>DT193G</td>
-            <td>Fullstack-utveckling med ramverk</td>
-            <td>B</td>
-            <td>Länk</td>
-            <td>Nej</td>
-          </tr>
-          <tr>
-            <td>DT209G</td>
-            <td>Webbutveckling för WordPress</td>
-            <td>B</td>
-            <td>Länk</td>
-            <td>Nej</td>
-          </tr>
-          <tr>
-            <td>DT208G</td>
-            <td>Programmering i TypeScript</td>
-            <td>B</td>
-            <td>Länk</td>
-            <td>Ja</td>
-          </tr>
-        </tbody>
-      </table>
-      <h3 class="w-50 mx-auto mt-5">Formulär - Lägg till kurs</h3>
-      <form class="w-50 mx-auto border border-secondary p-5 rounded mb-5">
-        <div class="row mb-3">
-          <label for="coursecode" class="col-form-label col-sm-2">
-            Kurskod:
-          </label>
-          <div class="col-sm-10">
-            <select
-              id="coursecode"
-              name="coursecode"
-              class="form-select border-secondary"
+            <tr>
+              <td>IK060G</td>
+              <td>Projektledning</td>
+              <td>A</td>
+              <td>Länk</td>
+              <td>Ja</td>
+            </tr>
+            <tr>
+              <td>DT193G</td>
+              <td>Fullstack-utveckling med ramverk</td>
+              <td>B</td>
+              <td>Länk</td>
+              <td>Nej</td>
+            </tr>
+            <tr>
+              <td>DT209G</td>
+              <td>Webbutveckling för WordPress</td>
+              <td>B</td>
+              <td>Länk</td>
+              <td>Nej</td>
+            </tr>
+            <tr>
+              <td>DT208G</td>
+              <td>Programmering i TypeScript</td>
+              <td>B</td>
+              <td>Länk</td>
+              <td>Ja</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h3 class="mt-4 container">Formulär - Lägg till kurs</h3>
+      <div class="container">
+        <form class="border border-secondary p-2 rounded mb-5 p-sm-5">
+          <div class="row mb-3">
+            <label for="coursecode" class="col-form-label col-sm-2">
+              Kurskod:
+            </label>
+            <div class="col-sm-10">
+              <select
+                id="coursecode"
+                name="coursecode"
+                class="form-select border-secondary"
+              >
+                <option value="DT071G">DT071G</option>
+                <option value="IK060G">IK060G</option>
+                <option value="DT193G">DT193G</option>
+                <option value="DT209G">DT209G</option>
+                <option value="DT208G">DT208G</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="coursename" class="col-form-label col-sm-2">
+              Kursnamn:
+            </label>
+            <div class="col-sm-10">
+              <input
+                type="text"
+                id="coursename"
+                name="coursename"
+                class="form-control border-secondary"
+              />
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="progression" class="col-form-label col-sm-2">
+              Progression:
+            </label>
+            <div class="col-sm-10">
+              <select
+                id="progression"
+                name="progression"
+                class="form-select border-secondary"
+              >
+                <option value="A">A</option>
+                <option value="B">B</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="courseplan" class="col-form-label col-sm-2">
+              Kursplan:
+            </label>
+            <div class="col-sm-10">
+              <textarea
+                class="form-control border-secondary"
+                id="courseplan"
+                name="courseplan"
+                style="height: 100px"
+              ></textarea>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="status" class="col-form-label col-sm-2">
+              Avklarad:
+            </label>
+            <div
+              class="col-sm-10 d-sm-flex flex-row-reverse align-items-center"
             >
-              <option value="DT071G">DT071G</option>
-              <option value="IK060G">IK060G</option>
-              <option value="DT193G">DT193G</option>
-              <option value="DT209G">DT209G</option>
-              <option value="DT208G">DT208G</option>
-            </select>
+              <input
+                type="checkbox"
+                id="status"
+                name="status"
+                class="form-check-input border-secondary"
+              />
+            </div>
           </div>
-        </div>
-        <div class="row mb-3">
-          <label for="coursename" class="col-form-label col-sm-2">
-            Kursnamn:
-          </label>
-          <div class="col-sm-10">
-            <input
-              type="text"
-              id="coursename"
-              name="coursename"
-              class="form-control border-secondary"
-            />
+          <div class="col-md-12 text-center py-4">
+            <button type="submit" class="btn btn-primary">Lägg till</button>
           </div>
+        </form>
+      </div>
+      <h3 class="container">Utvärdering</h3>
+      <div class="container">
+        <div class="border border-secondary rounded mb-5 p-3">
+          <p>
+            Fördelar: När det väl fungerade var det enkelt att använda, och det
+            går snabbt att få vettig layout på till exempel tabeller, navigation
+            och formulär.
+          </p>
+          <p>
+            Nackdelar: Svårt att göra utseendet unikt, t.ex begränsad gällande
+            färger. Tyckte dokumentationen gällande bootstrap och Vite var lite
+            dålig på hemsidan
+          </p>
         </div>
-        <div class="row mb-3">
-          <label for="progression" class="col-form-label col-sm-2">
-            Progression:
-          </label>
-          <div class="col-sm-10">
-            <select
-              id="progression"
-              name="progression"
-              class="form-select border-secondary"
-            >
-              <option value="A">A</option>
-              <option value="B">B</option>
-            </select>
-          </div>
-        </div>
-        <div class="row mb-3">
-          <label for="courseplan" class="col-form-label col-sm-2">
-            Kursplan:
-          </label>
-          <div class="col-sm-10">
-            <textarea
-              class="form-control border-secondary"
-              id="courseplan"
-              name="courseplan"
-              style="height: 100px"
-            ></textarea>
-          </div>
-        </div>
-        <div class="row mb-3">
-          <label for="status" class="col-form-label col-sm-2">Avklarad:</label>
-          <div class="col-sm-10">
-            <input
-              type="checkbox"
-              id="status"
-              name="status"
-              class="form-check-input border-secondary"
-            />
-          </div>
-        </div>
-        <div class="col-md-12 text-center py-4">
-          <button type="submit" class="btn btn-primary">Lägg till</button>
-        </div>
-      </form>
-      <h3 class="w-50 mx-auto">Utvärdering</h3>
-      <div class="w-50 mx-auto border border-secondary rounded p-3 mb-5">
-        <p class="w-50 mx-auto">
-          Fördelar: När det väl fungerade var det enkelt att använda, och det
-          går snabbt att få vettig layout på till exempel tabeller, navigation
-          och formulär.
-        </p>
-        <p class="w-50 mx-auto">
-          Nackdelar: Svårt att göra utseendet unikt, t.ex begränsad gällande
-          färger. Tyckte dokumentationen gällande bootstrap och Vite var lite
-          dålig på hemsidan
-        </p>
       </div>
     </main>
     <footer class="text-center bg-secondary p-4 text-light">
