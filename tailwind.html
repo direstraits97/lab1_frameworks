@@ -7,6 +7,187 @@
     <title>Laboration 1 | Tailwind</title>
   </head>
   <body>
-    <h1 class="text-3x1 font-bold underline">Hello world!</h1>
+    <header class="bg-gray-500 md:p-10">
+      <h1 class="text-center font-bold text-3xl text-white py-13">
+        Laboration 1 - Fullstack-utveckling
+      </h1>
+      <nav>
+        <ul
+          class="flex flex-col bg-white md:flex-row md:justify-around md:border-b border-gray-400 md:p-3"
+        >
+          <li class="border-b border-gray-400 py-4 text-center md:border-0">
+            <a href="/" class="font-bold">Startsida</a>
+          </li>
+          <li class="border-b border-gray-400 py-4 text-center md:border-0">
+            <a href="/tailwind" class="font-bold underline">Tailwind</a>
+          </li>
+          <li class="border-b border-gray-400 py-4 text-center md:border-0">
+            <a href="/bootstrap" class="font-bold">Bootstrap</a>
+          </li>
+          <li class="border-b border-gray-400 py-4 text-center md:border-0">
+            <a href="/publication" class="font-bold">Publicering</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2 class="text-center font-bold text-2xl m-5">Tailwind</h2>
+      <div class="container mx-auto md:p-15">
+        <div class="p-1">
+          <h3 class="font-bold text-xl">Om Tailwind</h3>
+          <div class="border mb-10 leading-8 rounded">
+            <p class="p-2 md:w-2/3 md:mx-auto">
+              Tailwind är ett "utility-first"-CSS-ramverk som släpptes 2019. Det
+              fokuserar på små specifika klasser där man bygger komponenter
+              själv i HTML-koden. Endast de klasser som utvecklaren använder
+              hamnar i den slutgiltiga CSS-filen, vilket kallas "just in
+              time"-kompilering.
+            </p>
+            <p class="p-2 md:w-2/3 md:mx-auto">
+              Om du vill veta mer om ramverket kan du använda länken nedan:
+            </p>
+            <p class="p-2 md:w-2/3 md:mx-auto">
+              <a
+                class="underline text-blue-600"
+                href="https://tailwindcss.com/"
+              >
+                Länk till Tailwinds hemsida
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="overflow-x-auto p-1 container mx-auto md:p-15">
+        <h3 class="font-bold text-xl">Tabell - Kurser</h3>
+        <table class="border-collapse border mb-10 min-w-full">
+          <thead>
+            <tr>
+              <th class="border p-2">Kurskod</th>
+              <th class="border p-2">Kursnamn</th>
+              <th class="border p-2">Progression</th>
+              <th class="border p-2">Kursplan</th>
+              <th class="border p-2">Avklarad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border p-2">DT071G</td>
+              <td class="border p-2">Programmering i C#.NET</td>
+              <td class="border p-2">A</td>
+              <td class="border p-2">Länk</td>
+              <td class="border p-2">Ja</td>
+            </tr>
+            <tr>
+              <td class="border p-2">IK060G</td>
+              <td class="border p-2">Projektledning</td>
+              <td class="border p-2">A</td>
+              <td class="border p-2">Länk</td>
+              <td class="border p-2">Ja</td>
+            </tr>
+            <tr>
+              <td class="border p-2">DT193G</td>
+              <td class="border p-2">Fullstack-utveckling med ramverk</td>
+              <td class="border p-2">B</td>
+              <td class="border p-2">Länk</td>
+              <td class="border p-2">Nej</td>
+            </tr>
+            <tr>
+              <td class="border p-2">DT209G</td>
+              <td class="border p-2">Webbutveckling för WordPress</td>
+              <td class="border p-2">B</td>
+              <td class="border p-2">Länk</td>
+              <td class="border p-2">Nej</td>
+            </tr>
+            <tr>
+              <td class="border p-2">DT208G</td>
+              <td class="border p-2">Programmering i TypeScript</td>
+              <td class="border p-2">B</td>
+              <td class="border p-2">Länk</td>
+              <td class="border p-2">Ja</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="p-1 container mx-auto md:p-15">
+        <h3 class="font-bold text-xl m-2">Formulär - Lägg till kurs</h3>
+        <form class="p-4 border mb-10 rounded">
+          <div class="flex flex-col justify-between m-4 sm:flex-row">
+            <label for="coursecode">Kurskod:</label>
+            <select id="coursecode" name="coursecode" class="border">
+              <option value="DT071G">DT071G</option>
+              <!--C#-->
+              <option value="IK060G">IK060G</option>
+              <!--Projektledning-->
+              <option value="DT193G">DT193G</option>
+              <!--Fullstack-->
+              <option value="DT209G">DT209G</option>
+              <!--Wordpress-->
+              <option value="DT208G">DT208G</option>
+              <!--TypeScript-->
+            </select>
+          </div>
+          <div class="flex flex-col justify-between m-4 sm:flex-row">
+            <label for="coursename">Kursnamn:</label>
+            <input
+              type="text"
+              id="coursename"
+              name="coursename"
+              class="border"
+            />
+          </div>
+          <div class="flex flex-col justify-between m-4 sm:flex-row">
+            <label for="progression">Progression:</label>
+            <select id="progression" name="progression" class="border">
+              <option value="A">A</option>
+              <option value="B">B</option>
+            </select>
+          </div>
+          <div class="flex flex-col justify-between m-4 sm:flex-row">
+            <label for="courseplan">Kursplan:</label>
+            <textarea
+              id="courseplan"
+              name="courseplan"
+              class="border"
+            ></textarea>
+          </div>
+          <div class="flex justify-between m-4">
+            <label for="status">Avklarad:</label>
+            <input type="checkbox" id="status" name="status" value="Ja" />
+          </div>
+          <button
+            type="submit"
+            class="bg-blue-700 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded mx-auto w-25 flex m-10 cursor-pointer"
+          >
+            Lägg till
+          </button>
+        </form>
+      </div>
+      <div class="container md:p-15 mx-auto">
+        <div class="p-1">
+          <h3 class="font-bold text-xl m-2">Utvärdering</h3>
+          <div class="border mb-10 leading-8 rounded">
+            <p class="p-2 md:w-2/3 md:mx-auto">
+              Fördelar: Snabbt att komma igång, tydliga instruktioner om hur man
+              installerar och importerar Tailwind i Vite. När man väl kommit in
+              i tänket känns det som att det blev lättare att navigera i
+              html-filerna.
+            </p>
+            <p class="p-2 md:w-2/3 md:mx-auto">
+              Nackdelar: Tog ett tag att komma in i tänket, och det blir mycket
+              och rörig kod i html-filerna.
+            </p>
+            <p class="p-2 md:w-2/3 md:mx-auto">
+              Jag kommer nog att jobba med Tailwind mycket framöver, då jag
+              tycker det är mycket enklare att justera som jag vill ha det.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="text-center bg-gray-600 text-white py-10 leading-10">
+      <p>Fullstack-utveckling</p>
+      <p>DT193G</p>
+      <p>JOBA1602</p>
+    </footer>
   </body>
 </html>
