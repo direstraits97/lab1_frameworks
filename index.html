@@ -6,32 +6,55 @@
     <link rel="stylesheet" href="/src/tailwind/tailwind.css" />
     <title>Laboration 1 | Startsida</title>
   </head>
-  <body>
-    <header class="bg-gray-600">
-      <h1 class="text-center font-bold text-3xl bg-gray-600 text-white py-18">
+  <body class="flex flex-col h-screen">
+    <header class="bg-gray-500 md:p-10">
+      <h1 class="text-center font-bold text-3xl text-white py-13">
         Laboration 1 - Fullstack-utveckling
       </h1>
-      <nav class="pb-10">
-        <ul class="flex w-1/2 mx-auto justify-between bg-gray-300 p-4 rounded">
-          <li><a href="/" class="font-bold underline">Startsida</a></li>
-          <li><a href="/tailwind" class="font-bold">Tailwind</a></li>
-          <li><a href="/bootstrap" class="font-bold">Bootstrap</a></li>
-          <li><a href="/publication" class="font-bold">Publicering</a></li>
+      <nav>
+        <ul
+          class="flex flex-col bg-white md:flex-row md:justify-around md:border-b border-gray-400 md:p-3"
+        >
+          <li class="border-b border-gray-400 py-4 text-center md:border-0">
+            <a href="/" class="font-bold underline">Startsida</a>
+          </li>
+          <li class="border-b border-gray-400 py-4 text-center md:border-0">
+            <a href="/tailwind" class="font-bold">Tailwind</a>
+          </li>
+          <li class="border-b border-gray-400 py-4 text-center md:border-0">
+            <a href="/bootstrap" class="font-bold">Bootstrap</a>
+          </li>
+          <li class="border-b border-gray-400 py-4 text-center md:border-0">
+            <a href="/publication" class="font-bold">Publicering</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
-      <h2 class="text-center font-bold text-2xl m-5">Uppgiften</h2>
-      <div class="border w-1/2 mx-auto rounded mb-10 leading-8">
-        <p class="w-1/2 mx-auto p-2">
-          Denna uppgift går ut på att använda två stycken CSS-ramverk i en och
-          samma webbplats, samt utvärdera nackdelar och fördelar med valda
-          ramverk. Jag har valt att använda Bootstrap och Tailwind då dessa är
-          väldigt populära.
-        </p>
+      <div class="container p-1 sm: mx-auto lg:w-1/2">
+        <h2 class="text-center font-bold text-2xl m-5">Uppgiften</h2>
+        <div class="border rounded mb-10 leading-8 p-2">
+          <p class="p-2">
+            Denna uppgift går ut på att använda två stycken CSS-ramverk i en och
+            samma webbplats, samt utvärdera nackdelar och fördelar med valda
+            ramverk. Jag har valt att använda Bootstrap och Tailwind då dessa är
+            väldigt populära.
+          </p>
+          <p class="p-2">
+            Undersidorna för respektive ramverk innehåller också information om
+            dessa tillsammans med länkar till dess webbplatser.
+          </p>
+          <p class="p-2">
+            Undersidan för publicering innehåller information om den
+            publiceringsplattform jag använt, samt hur jag gjorde för att
+            publicera webbsidan.
+          </p>
+        </div>
       </div>
     </main>
-    <footer class="text-center bg-gray-600 text-white py-10 leading-10">
+    <footer
+      class="text-center bg-gray-600 text-white py-10 leading-10 w-full mt-auto"
+    >
       <p>Fullstack-utveckling</p>
       <p>DT193G</p>
       <p>JOBA1602</p>
