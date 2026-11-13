@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/src/tailwind/tailwind.css" />
     <title>Laboration 1 | Publicering</title>
   </head>
-  <body>
+  <body class="flex flex-col h-screen">
     <header class="bg-gray-500 md:p-10">
       <h1 class="text-center font-bold text-3xl text-white py-13">
         Laboration 1 - Fullstack-utveckling
@@ -32,8 +32,39 @@
     </header>
     <main>
       <h2 class="text-center font-bold text-2xl m-5">Publicering</h2>
+      <div class="container mx-auto md:p-15">
+        <div class="p-1">
+          <h3 class="font-bold text-xl">Github Pages</h3>
+          <div class="border mb-10 leading-8 rounded">
+            <p class="p-2 md:w-2/3 md:mx-auto">
+              För att publicera denna webbsida har jag använt Github Pages. Det
+              är en tjänst som erbjuds av Github där man kan publicera statiska
+              webbplatser. Programmeringsspråken som kan användas är begränsade
+              till frontend-utveckling, vilket innebär HTML, CSS och JavaScript.
+              Publiceringstjänsten stöttar alltså inte server-baserade språk.
+              Github Pages är gratis att använda, men med alternativa
+              betalplaner som Team eller Enterprise för Github så får man mer
+              kontroll över repot webbsidan bygger på, till exempel att repot
+              kan vara privat. Team kostar 4$/mån och Enterprise kostar 21$/mån.
+              Om man arbetar med versionshantering och använder Github är
+              processen enkel, och som tidigare nämnt gratis. En nackdel kan
+              vara begränsningen i vilka typer av webbsidor man kan publicera,
+              eftersom att de endast kan vara statiska.
+            </p>
+            <p class="p-2 md:w-2/3 md:mx-auto">
+              Jag började med att skapa ett repository på mitt Github-konto med
+              en extra gren för development. När allt innehåll på webbsidan var
+              klart så gjordes en push till main-grenen. Sedan inom
+              inställningar för det repot kunde man aktivera Github Pages genom
+              att välja vilken gren som ska användas.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer class="text-center bg-gray-600 text-white py-10 leading-10">
+    <footer
+      class="text-center bg-gray-600 text-white py-10 leading-10 w-full mt-auto"
+    >
       <p>Fullstack-utveckling</p>
       <p>DT193G</p>
       <p>JOBA1602</p>
