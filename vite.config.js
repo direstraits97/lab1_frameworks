@@ -6,10 +6,19 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(import.meta.dirname, "index.html"),
-        tailwind: resolve(import.meta.dirname, "tailwind.html"),
-        publication: resolve(import.meta.dirname, "publication.html"),
-        bootstrap: resolve(import.meta.dirname, "bootstrap.html"),
+        main: resolve(import.meta.dirname, "/lab1_frameworks/index.html"),
+        tailwind: resolve(
+          import.meta.dirname,
+          "/lab1_frameworks/tailwind.html",
+        ),
+        publication: resolve(
+          import.meta.dirname,
+          "/lab1_frameworks/publication.html",
+        ),
+        bootstrap: resolve(
+          import.meta.dirname,
+          "/lab1_frameworks/bootstrap.html",
+        ),
       },
     },
   },
